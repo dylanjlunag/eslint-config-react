@@ -1,0 +1,38 @@
+{
+  "name": "@dylanjlunag/eslint-config-react",
+  "version": "1.0.0",
+  "description": "EsLint configuration for React",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc --outDir dist",
+    "format": "prettier --write .",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanjlunag/eslint-config-react.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "react"
+  ],
+  "author": "Dylan Luna <dylanjlunag@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanjlunag/eslint-config-react/issues"
+  },
+  "homepage": "https://github.com/dylanjlunag/eslint-config-react#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=8"
+  }
+}
